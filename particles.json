@@ -1,0 +1,29 @@
+{
+    "particles": {
+      "number": {
+        "value": 50
+      },
+      "size": {
+        "value": 3
+      },
+      "opacity": {
+        "value": 0.7,
+        "random": true
+      },
+      "line_linked": {
+        "enable": true
+      },
+      "move": {
+        "speed": 2
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        }
+      }
+    }
+  }
+  
