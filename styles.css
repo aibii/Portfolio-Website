@@ -54,14 +54,14 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.technologies, .social-links {
+.projects, .technologies, .social-links {
     list-style: none;
     padding-left: 0;
     text-align: left; /* Align the text to the left */
 }
 
 
-.technologies li, .social-links a {
+.projects li, .technologies li, .social-links a {
     background-color: #112240;
     display: inline-block;
     margin: 5px;
@@ -125,9 +125,23 @@ p::before, li::before {
     padding: 20px;
 }
 
-.about-text, .contact-text {
+.about-text, .contact-text, .work-text, .experience-text {
     width: 50%; /* Adjust the width as necessary */
     /* Align the text to the right if you want the photo to be aligned with the start of the text */
+}
+
+.experience-text h1 {
+    color: #ffffff; /* White color for the heading text */
+}
+
+.experience-section {
+    /* Same styling as about-me, work-section, etc. for consistency */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
 }
 
 hr {
@@ -272,3 +286,4 @@ nav ul li a {
 .projects li {
     max-width: 50%;
 }
+
