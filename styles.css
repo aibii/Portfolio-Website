@@ -6,11 +6,12 @@ body, h1, p, ul, li, a {
     padding: 0;
 }
 
-body {
+body, html {
     font-family: 'Arial', sans-serif;
     color: #dadfec;
     background-color: #0a192f;
     line-height: 1.6;
+    height: 100%;
 }
 
 nav {
@@ -43,10 +44,15 @@ nav ul li a {
     font-weight: bold;
 }
 
+.container {
+    height: 100%;
+}
+
 .about-me {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
+    height: 100%;
 }
 
 .about-me h1 {
@@ -157,6 +163,7 @@ hr {
     left: 60%;
     position: absolute;
     top: 12.5em;
+    z-index: 1;
 }
 
 .about-photo img {
@@ -165,13 +172,6 @@ hr {
     display: block; /* Ensures the image is a block-level element, removing extra space */
     border-radius: 10px; /* Optional: if you want rounded corners */
     left: 50%;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: #64ffda; /* The color of the horizontal line */
-    margin-bottom: 20px; /* Spacing below the line */
 }
 
 nav ul li a {
@@ -221,13 +221,11 @@ nav ul li a {
 
 .rectangle {
     width: 19%; /* Set the width of your rectangle */
-    height: 40%; /* Set the height of your rectangle */
+    height: 200px;
     border: 2px solid #64ffda; /* Set the border width and color */
     background-color: transparent; /* This ensures the rectangle is not filled */
     position: absolute;
-    left: 61.3%;
-    bottom: 24.3%;
-    z-index: -1;
+    left: 61.2%;
     border-radius: 10px;
 }
 
@@ -286,4 +284,3 @@ nav ul li a {
 .projects li {
     max-width: 50%;
 }
-
