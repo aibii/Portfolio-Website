@@ -25,6 +25,7 @@
             <div class="about-text">
                 <h1><span class="monospace">01.</span> About Me</h1>
                 <hr>
+                <img src="./imgs/photo.jpg" alt="Aibiike" id="photo"/>
             <p>I'm Aibiike Omurzakova, a committed student at St. Lawrence College with a stellar 3.9 GPA in Computer Programming and Analysis. My academic pursuits are rooted in a passion for technology, particularly in web development, with a strong emphasis on HTML5, CSS3, JavaScript, and relational databases. My education has been a blend of theoretical knowledge and practical application, preparing me for the dynamic world of technology.</p>
             <br>
             <p>As a Full Stack Developer at the Ministry of Health, my expertise in Java, Angular, and Spring Boot has been integral in developing significant web applications. This role has honed my skills in coding, teamwork, and problem-solving, making me a versatile and valuable team player in the tech industry.</p>
@@ -39,10 +40,7 @@
                     <li>Spring Boot</li>
                     <li>JavaScript</li>
                 </ul>
-            <div class="about-photo">
-                <img src="./imgs/photo.jpg" alt="Aibiike" id="photo"/>
-            </div>
-            <div class="rectangle" id="rectangle"></div>
+           <!-- <div class="rectangle" id="rectangle"></div> -->
             </div>
     </section>
 
@@ -59,6 +57,7 @@
     rectangle.style.height = photoHeight + 'px';
 
     // Check if the screen width is less than or equal to 600px
+    // First check for the smaller width
     if (window.innerWidth <= 600) {
         // Adjust top position for smaller mobile layout
         rectangle.style.top = (photoTop + 208) + 'px'; // Adjust as needed

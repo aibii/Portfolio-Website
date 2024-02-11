@@ -48,11 +48,16 @@ nav ul li a {
     height: 100%;
 }
 
+
 .about-me {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
     height: 100%;
+}
+
+img {
+    float: right;
 }
 
 .about-me h1 {
@@ -132,8 +137,15 @@ p::before, li::before {
 }
 
 .about-text, .contact-text, .work-text, .experience-text {
-    width: 50%; /* Adjust the width as necessary */
+    width: 90%; /* Adjust the width as necessary */
+    transition: width 0.5s ease-in-out;
     /* Align the text to the right if you want the photo to be aligned with the start of the text */
+}
+
+@media (max-width: 1000px) {
+    .contact-text {
+        width: 80%;
+    }
 }
 
 .experience-text h1 {
@@ -161,7 +173,6 @@ hr {
     width: 19%; /* Adjust the width as necessary */
     /* Center the photo within the div, if necessary */
     left: 60%;
-    position: absolute;
     top: 12.5em;
     z-index: 1;
 }
@@ -171,7 +182,8 @@ hr {
     height: auto;
     display: block; /* Ensures the image is a block-level element, removing extra space */
     border-radius: 10px; /* Optional: if you want rounded corners */
-    left: 50%;
+    float: right;
+    outline: 5px solid #64ffda;
 }
 
 nav ul li a {
@@ -222,7 +234,6 @@ nav ul li a {
 .rectangle {
     width: 19%; /* Set the width of your rectangle */
     height: 200px;
-    border: 2px solid #64ffda; /* Set the border width and color */
     background-color: transparent; /* This ensures the rectangle is not filled */
     position: absolute;
     left: 61.2%;
@@ -250,7 +261,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 100em;
     margin: 50px auto;
     padding: 20px;
 }
@@ -283,4 +294,20 @@ nav ul li a {
 
 .projects li {
     max-width: 50%;
+    transition: max-width 0.5s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+    .projects li {
+        max-width: 80%;
+    }
+}
+
+img {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    float: right;
+    width: 30%;
+    border-radius: 1em;
+    box-shadow: 0.4em 0.4em 0 0 #64ffda;
 }
