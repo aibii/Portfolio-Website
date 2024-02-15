@@ -338,4 +338,8 @@ img {
     box-shadow: 0.4em 0.4em 0 0 #64ffda;
 }
 
+.project-title {
+    margin-top: 18em;
+}
+
 /* Add a hover effect to the social links */
