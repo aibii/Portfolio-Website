@@ -46,7 +46,7 @@ nav ul li a {
 
 .container {
     max-width: 100em; /* Adjust based on your design preference */
-    margin: 50px auto; /* Centers the container */
+    margin: 20px auto; /* Centers the container */
     padding: 20px; /* Adds padding inside the container */
 }
 
@@ -71,7 +71,9 @@ nav ul li a {
     margin-bottom: 15px; /* Space between image and text */
 }
 
-
+.project-description {
+    margin-bottom: 1em;
+}
 
 .about-me {
     max-width: 800px;
@@ -286,7 +288,7 @@ nav ul li a {
     justify-content: space-between;
     align-items: flex-start;
     max-width: 100em;
-    margin: 50px auto;
+    margin: 0px auto;
     padding: 20px;
 }
 
